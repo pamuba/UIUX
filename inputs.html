@@ -11,7 +11,32 @@
     <form>
         <label for="first">FIRST NAME:</label>
         <input id="first" readonly value="Sam" type="text" required placeholder="All in CAPS">
+        <br>
+        <label for="em">Enter Email:</label>
+        <input id=em required type="email"  value="me.in@me.in"
+        pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,2}\b">
+        <br>
+        <label for="phone">Enter your Phone:</label>
+        <input type="tel" id="phone"
+        value="123-456-7890"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="123-456-7890" required
+        />
+        <br>
+        <input type="time" min="09:00" max="18:00" required />
+        <small>Office hours are from 9am to 6pm</small>
         <hr>
+        <br>
+        <label>Choose your preferred date(required, April 12 to 20th):
+            <input 
+               type="date"
+               min="2021-04-12"
+               max="2021-04-20"
+               required
+            />
+            <span class="validity"></span>
+        </label>
+        <br>
         <button type="submit">CLICK</button>
     </form>
 </body>
