@@ -4,6 +4,4 @@ positions
 flex 
 grid 
 menu
-float
 RWD
-box shadow
